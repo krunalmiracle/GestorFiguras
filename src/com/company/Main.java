@@ -11,9 +11,12 @@ public class Main {
         v[1] = new Rectangulo(5,3);
         v[2] = new Triangulo(7,2);
         v[3] = new Quadrado(7.8);
-        //System.out.println("The Total Area is " + Suma(v));
+        System.out.println("The Total Area is " + Suma(v));
         Arrays.sort(v); //Implemented Sorting inside the Class Figura
         double area_total = Suma(v);
+        for (Figura i : v) {
+            System.out.println("The Total Area is " + i.Area());
+        }
 
     }
     public static double Suma(Figura[] figuras){
