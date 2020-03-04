@@ -11,20 +11,14 @@ public class Main {
         v[1] = new Rectangulo(5,3);
         v[2] = new Triangulo(7,2);
         v[3] = new Quadrado(7.8);
-        System.out.println("The Total Area is " + Suma(v));
-        Arrays.sort(v); //Implemented Sorting inside the Class Figura
-        double area_total = Suma(v);
-        for (Figura i : v) {
-            System.out.println("The Total Area is " + i.Area());
-        }
+
+        //Arrays.sort(v); //Implemented Sorting inside the Class GestorFigura, Last Version Main Test Array.Sort
+        GestorFiguras gestorfiguras = new GestorFiguras();
+        v = gestorfiguras.Sort(v);
+        double area_total = gestorfiguras.Suma(v);
+        //System.out.println("The Total Area is " +area_total); GOD FORBID THIS SHOULDN'T BE ACTIVATED!!
 
     }
-    public static double Suma(Figura[] figuras){
-        double area_total = 0;
-        for (Figura i : figuras) {
-            area_total = area_total + i.Area();
-        }
-        return area_total;
-    }
+
 
 }
