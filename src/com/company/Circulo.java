@@ -7,7 +7,7 @@ public class Circulo extends Figura {
     {
         this.r = radius;
     }
-    public double area()
+    public double Area()
     {
         return pi*(r*r);
     }

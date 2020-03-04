@@ -7,9 +7,9 @@ public class Quadrado extends Figura {
     }
 
     @Override
-    public double area() {
+    public double Area() {
         Rectangulo rectangulo = new Rectangulo(length,length);
-        return rectangulo.area();
+        return rectangulo.Area();
     }
 }
 

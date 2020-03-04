@@ -7,7 +7,7 @@ public class Rectangulo extends Figura {
     {
         this.a = a; this.b =b;
     }
-    public double area()
+    public double Area()
     {
         return this.a*this.b;
     }

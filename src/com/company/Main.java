@@ -1,6 +1,6 @@
 package com.company;
 
-import javax.swing.*;
+import java.util.Arrays;
 
 public class Main {
 
@@ -11,9 +11,17 @@ public class Main {
         v[1] = new Rectangulo(5,3);
         v[2] = new Triangulo(7,2);
         v[3] = new Quadrado(7.8);
+        //System.out.println("The Total Area is " + Suma(v));
+        Arrays.sort(v); //Implemented Sorting inside the Class Figura
+        double area_total = Suma(v);
+
     }
-    public double Suma(Figura[] figuras){
-        return 0;
+    public static double Suma(Figura[] figuras){
+        double area_total = 0;
+        for (Figura i : figuras) {
+            area_total = area_total + i.Area();
+        }
+        return area_total;
     }
 
 }

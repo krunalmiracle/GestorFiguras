@@ -7,7 +7,7 @@ public class Triangulo extends Figura {
     {
         this.height = h; this.base =b;
     }
-    public double area()
+    public double Area()
     {
         return this.height*this.base/2;
     }
