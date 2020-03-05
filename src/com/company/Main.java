@@ -14,9 +14,9 @@ public class Main {
 
         //Arrays.sort(v); //Implemented Sorting inside the Class GestorFigura, Last Version Main Test Array.Sort
         GestorFiguras gestorfiguras = new GestorFiguras();
-        v = gestorfiguras.Sort(v);
+         gestorfiguras.Sort(v);
         double area_total = gestorfiguras.Suma(v);
-        //System.out.println("The Total Area is " +area_total); GOD FORBID THIS SHOULDN'T BE ACTIVATED!!
+        System.out.println("The Total Area is " +area_total);// GOD FORBID THIS SHOULDN'T BE ACTIVATED!!
 
     }
 
